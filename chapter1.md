@@ -1,6 +1,4 @@
-
-
-## 1、接收合作方现有登录态【阅文】
+## 1、接收合作方现有登录态【阅文】 {#jieshoudenglutai}
 
 ### 1.1 说明 {#第一个}
 
@@ -14,7 +12,7 @@
 
 方法: get
 
-url地址：https://xxx.yuewen.com/xxxx/xxxx.html?\_cptoken=xxxxxxxx
+url地址：[https://xxx.yuewen.com/xxxx/xxxx.html?\_cptoken=xxxxxxxx](https://xxx.yuewen.com/xxxx/xxxx.html?_cptoken=xxxxxxxx)
 
 备注：阅文H5站点的任意页面均可接收此参数
 
@@ -24,15 +22,11 @@ url地址：https://xxx.yuewen.com/xxxx/xxxx.html?\_cptoken=xxxxxxxx
 | :--- | :--- | :--- | :--- | :--- |
 | \_cptoken | String\(128\) | N | XXXX | 此token由合作方生成，规则可自定义 |
 
-
-
 ### 1.4返回参数
 
 无
 
-
-
-## 2、用户登录URL【合作方】
+## 2、用户登录URL【合作方】 {#userlogin}
 
 ### 2.1说明
 
@@ -48,21 +42,15 @@ url地址：合作方提供
 
 ### 2.3阅文侧提供的输入参数
 
-
-
 | 参数名称 | 类型 | 必填 | 示例值 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
 | appflag | string | N | yuewen | 合作方在阅文开放平台的唯一标识 |
 | redirect\_uri | string | Y |  | 登陆后回调地址，UrlEncode |
 | state | String | Y |  | 用于保持请求和回调的状态，d登录完成后需原样返回。该参数可用于防止csrf |
 
-
-
 ### 2.4返回参数
 
 无
-
-
 
 ## 3、登录回调接口【阅文】
 
@@ -78,7 +66,7 @@ url地址：合作方提供
 
 方法: get
 
-url地址：https://mcp.yuewen.com/mcp/cplogin/logincallbac?appflag=yuewen&\_cptoken=xxxxxxxx&state=xxxx
+url地址：[https://mcp.yuewen.com/mcp/cplogin/logincallbac?appflag=yuewen&\_cptoken=xxxxxxxx&state=xxxx](https://mcp.yuewen.com/mcp/cplogin/logincallbac?appflag=yuewen&_cptoken=xxxxxxxx&state=xxxx)
 
 ### 3.3输入参数
 
@@ -88,13 +76,9 @@ url地址：https://mcp.yuewen.com/mcp/cplogin/logincallbac?appflag=yuewen&\_cpt
 | \_cptoken | String | Y |  | 此ticket由合作方生成，规则可自定义 |
 | state | String | Y |  | 发起登录时传递的值原样返回 |
 
-
-
 ### 3.4返回参数
 
 无
-
-
 
 ## 4、获取用户信息接口【合作方】
 
@@ -114,18 +98,12 @@ url地址：合作方提供
 
 ### 4.3输入参数
 
-
-
 | 参数名称 | 类型 | 必填 | 示例值 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
 | \_cptoken | string | Y |  | 接口1和接口3返回的cptoken |
 | appflag | String | Y |  | 合作方在阅文开放平台的唯一标识 |
 
-
-
 ### 4.4 输出参数\[JSON\]
-
-
 
 | 参数名称 | 类型 | 必填 | 示例值 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -150,9 +128,9 @@ url地址：合作方提供
 
 "nickname": "张小花",
 
-"avatar": "http://img1.chuangshi.qq.com/upload/avatar/2016-04-05/57036b9923011.jpeg"
+"avatar": "[http://img1.chuangshi.qq.com/upload/avatar/2016-04-05/57036b9923011.jpeg](http://img1.chuangshi.qq.com/upload/avatar/2016-04-05/57036b9923011.jpeg)"
 
- }
+}
 
 }
 
